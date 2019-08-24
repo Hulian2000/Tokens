@@ -11,7 +11,6 @@ export class GitsearchFormComponent implements OnInit {
 
   gitUser: string;
   user(){
-    console.log(this.gitUser)
     this.emitUser.emit(this.gitUser)
   }
 
