@@ -10,8 +10,8 @@ import { Repo } from '../repo/repo';
 })
 export class GitsearchComponent implements OnInit {
   
-  myUser: User [];
-  myRepo:Repo [];
+  myUsers: User [];
+  myRepos:Repo [];
 
   constructor(private http:HttpServiceService) { }
 
@@ -21,16 +21,16 @@ export class GitsearchComponent implements OnInit {
   myName(userName){
     this.http.myProfile(userName).then(
       (success)=>{
-        this.myUser=this.http.userProfile;
-        console.log(this.myUser)
+        this.myUsers=this.http.userProfile;
+        console.log(this.myUsers)
       },
       (error)=>{
         console.log(error)
       });
       this.http.myRepo(userName).then(
         (success)=>{
-          this.myRepo =this.http.userRepo;  
-          console.log(this.myRepo);
+          this.myRepos =this.http.userRepo;  
+          console.log(this.myRepos);
         },
         (error)=>{
           console.log(error)

@@ -1,4 +1,14 @@
 <div class="container">
-<app-gitsearch-form (emituser)="($event)"></app-gitsearch-form>
-<div *ngFor= 'let '></div>
+<app-gitsearch-form (emitUser)="($event)"></app-gitsearch-form>
+<div *ngFor= 'let myUser of myUsers'>
+    <p>Name: {{myUser.name}}<br>GitHub name:{{myUser.login}}</p>
+    <img src="{{myUser.avatar_url}}" alt="">
+</div>
+<div *ngFor = 'let myRepo of myRepos'>
+    <div *ngFor = 'let myRep of myRepo'>
+        <h5>{{myRep.name}}</h5>
+        <p>{{myRep.description}}</p>
+        <a href="{{myRep.html_url}}"><p>View project on GitHub</p></a>
+    </div>
+</div>
 </div>
