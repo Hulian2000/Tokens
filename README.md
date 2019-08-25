@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Contacts.
 
-Phone Number - 0795273068.
+Phone Number - 0795273068.<br>
 Email; hulian.ashraf703@yahoo.com.
 S
 ## Development server.
