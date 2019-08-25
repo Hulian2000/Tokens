@@ -27,7 +27,14 @@ export class GitsearchComponent implements OnInit {
       (error)=>{
         console.log(error)
       });
-      
+      this.http.myRepo(userName).then(
+        (success)=>{
+          this.myRepo =this.http.userRepo;  
+          console.log(this.myRepo);
+        },
+        (error)=>{
+          console.log(error)
+        });
   }
 
 }

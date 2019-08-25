@@ -39,5 +39,24 @@ export class HttpServiceService {
     })
     return promise;
   }
-
+  myRepo(userName:string){
+    interface repoData {
+      name: string;
+      html_url: string;
+      description:string;
+      language:string;
+    }
+    let promise = new Promise ((resolve,reject)=>{
+      this.userRepo = [];
+      this.http.get<repoData>(this.url+userName+"/repos?"+this.token).toPromise().then(
+        (result)=>{
+          this.userRepo.push(result);
+          resolve();
+        },
+        (error)=>{
+          reject();
+        })
+    })
+    return promise;
+}
 }
