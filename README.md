@@ -2,10 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
+## Author.
+
+Hulian Juba John.
+
 ## Contacts.
 
 Phone Number - 0795273068.<br>
-Email; hulian.ashraf703@yahoo.com.
+Email; hulian.ashraf703@yahoo.com 
 
 ## Development server.
 
