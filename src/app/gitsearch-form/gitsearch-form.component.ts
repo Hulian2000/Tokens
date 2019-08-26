@@ -10,8 +10,8 @@ export class GitsearchFormComponent implements OnInit {
   @Output () emitUser = new EventEmitter<any>()
 
   User: string;
+  
   user(){
-    //console.log(this.gitUser)
     this.emitUser.emit(this.User)
   }
 
